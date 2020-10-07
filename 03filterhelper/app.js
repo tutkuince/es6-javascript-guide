@@ -14,3 +14,7 @@ for (let i = 0; i < products.length; i++) {
 }
 
 console.log(filteredProducts);
+
+products.filter(function (product) {
+    return product.type === 'vegetable';
+});
