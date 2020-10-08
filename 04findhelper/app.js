@@ -13,3 +13,9 @@ for (let i = 0; i < users.length; i++) {
 }
 
 console.log(user);
+
+user = users.filter(function (user) {
+   return user.name === 'Alex';
+});
+
+console.log(user);
