@@ -2,6 +2,7 @@ let users = [
     {name: 'Jill'},
     {name: 'Alex'},
     {name: 'Bill'},
+    {name: 'Alex'}
 ];
 
 let user;
@@ -14,8 +15,8 @@ for (let i = 0; i < users.length; i++) {
 
 console.log(user);
 
-user = users.filter(function (user) {
+user = users.find(function (user) {
    return user.name === 'Alex';
 });
-
+// returns first one.
 console.log(user);
