@@ -4,3 +4,16 @@
 // findWhere(ladders, {height: '20 feet'});
 // The object {ladders: '20 feet'} should be used as the search criteria -
 // we would want to find a ladder whose 'height' property was '20 feet';
+
+let ladders = [
+    {id: 1, height: 20},
+    {id: 3, height: 25}
+];
+
+function findWhere(array, criteria) {
+    return array.find(function(element) {
+        return element[Object.keys(criteria)[0]] === criteria[Object.keys(criteria)[0]];
+    });
+}
+
+let ladder = findWhere(ladders, {height: 25});
