@@ -20,3 +20,16 @@ for (let i = 0; i < computers.length; i++) {
 
 console.log('allComputersCanRunPrograms:', allComputersCanRunPrograms);
 console.log('onlySomeComputersCanRunProgram:',onlySomeComputersCanRunProgram);
+
+// and operation
+let everyComputers = computers.every(function (computer) {
+    return computer.ram > 16;
+});
+
+// or operation
+let someComputers = computers.some(function (computer) {
+   return  computer.ram > 16;
+});
+
+console.log('everyComputers:', everyComputers);
+console.log('someComputers:', someComputers);
